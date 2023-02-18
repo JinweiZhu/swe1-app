@@ -15,7 +15,6 @@ import os
 load_dotenv()
 
 from pathlib import Path
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -31,8 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['django-env.eba-yjuswr63.us-west-2.elasticbeanstalk.com']
-
+ALLOWED_HOSTS = ['django-env.eba-yjuswr63.us-west-2.elasticbeanstalk.com','127.0.0.1']
 # Application definition
 
 INSTALLED_APPS = [
@@ -82,7 +80,7 @@ WSGI_APPLICATION = "mysite.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+        "NAME": str(BASE_DIR / "db.sqlite3"),
     }
 }
 
