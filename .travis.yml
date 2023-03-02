@@ -1,0 +1,20 @@
+language: python
+python:  
+  - "3.7"
+# command to install dependencies
+install:
+  - pip install -r requirements.txt
+# command to run tests
+
+# script:
+#   - pytest tests/test.py
+# deploy:
+#   provider: elasticbeanstalk
+#   access_key_id: $ACCESSKEYID
+#   secret_access_key: $SECRETACCESSKEY
+#   region: "us-east-1"  
+#   app: "django-tutorial"
+#   env: "django-env"
+#   bucket_name: "elasticbeanstalk-us-east-1-017801987097"
+#   on:
+#     branch: master
