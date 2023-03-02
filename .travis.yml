@@ -4,8 +4,9 @@ python:
 # command to install dependencies
 install:
   - pip install -r requirements.txt
-  
+
 deploy:
+  #An issue might be the nested folder structure and name of the app not specified.
   provider: elasticbeanstalk
   access_key_id: $ACCESSKEYID
   secret_access_key: $SECRETACCESSKEY
@@ -15,3 +16,6 @@ deploy:
   #bucket_name: "elasticbeanstalk-us-east-1-017801987097"
   on:
     branch: master
+script: ./checkFormat.sh
+after_script: coveralls
+  

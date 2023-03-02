@@ -11,10 +11,10 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 from dotenv import load_dotenv
 import os
+from pathlib import Path
 
 load_dotenv()
 
-from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -23,18 +23,18 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-#Try out new key in .env
-SECRET_KEY = os.environ.get('SECRET_KEY')
-#SECRET_KEY = "django-insecure-3vf49v28%0x&%@f+2i7ablh6=&neg1#te4!ozx7gbm3w)*v75+"
+# Try out new key in .env
+SECRET_KEY = os.environ.get("SECRET_KEY")
+# SECRET_KEY = "django-insecure-3vf49v28%0x&%@f+2i7ablh6=&neg1#te4!ozx7gbm3w)*v75+"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['django-env.eba-yjuswr63.us-west-2.elasticbeanstalk.com','127.0.0.1']
+ALLOWED_HOSTS = ["django-env.eba-yjuswr63.us-west-2.elasticbeanstalk.com", "127.0.0.1"]
 # Application definition
 
 INSTALLED_APPS = [
-    'polls.apps.PollsConfig',
+    "polls.apps.PollsConfig",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",

@@ -1,4 +1,8 @@
 Django==2.2
 pytz==2022.7.1
 sqlparse==0.4.3
-
+black
+flake8
+coverage
+coveralls
+pytest
