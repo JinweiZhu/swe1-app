@@ -15,7 +15,7 @@ deploy:
   region: "us-west-2"  
   app: "django-tutorial"
   env: "django-env"
-  #bucket_name: "elasticbeanstalk-us-east-1-017801987097"
+  bucket_name: "elasticbeanstalk-us-west-2-120100994814"
   on:
     branch: main
 script: ./checkFormat.sh
