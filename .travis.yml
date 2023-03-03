@@ -4,7 +4,8 @@ python:
 # command to install dependencies
 install:
   - pip install -r requirements.txt
-
+before_script:
+   - python manage.py migrate
 deploy:
   #An issue might be the nested folder structure and name of the app not specified.
   provider: elasticbeanstalk
@@ -18,4 +19,4 @@ deploy:
     branch: master
 script: ./checkFormat.sh
 after_script: coveralls
-  
+  #haha
