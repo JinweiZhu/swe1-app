@@ -17,7 +17,7 @@ deploy:
   env: "django-env"
   #bucket_name: "elasticbeanstalk-us-east-1-017801987097"
   on:
-    branch: master
+    branch: main
 script: ./checkFormat.sh
 after_script: coveralls
   #haha
