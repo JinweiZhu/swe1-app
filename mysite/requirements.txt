@@ -6,4 +6,4 @@ flake8
 coverage
 coveralls
 pytest
-dotenv
+python-dotenv
