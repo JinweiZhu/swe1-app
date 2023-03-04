@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 cd mysite
 black --check .
 flake8 .
