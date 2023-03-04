@@ -18,7 +18,7 @@ deploy:
   bucket_name: "elasticbeanstalk-us-west-2-120100994814"
   on:
     branch: main
-script: ./checkFormat.sh
+script: source checkFormat.sh
 after_script: coveralls
   #haha
   #haha
