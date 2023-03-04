@@ -1,4 +1,6 @@
 #!/bin/bash
+#fail fast if error
+set -e
 black --check .
 flake8 .
 cd mysite
