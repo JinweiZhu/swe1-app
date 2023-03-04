@@ -3,3 +3,4 @@ mysite/.env
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
+#haha
